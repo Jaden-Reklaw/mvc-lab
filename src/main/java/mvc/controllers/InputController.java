@@ -18,8 +18,8 @@ public class InputController {
     //Initial Get Method to load the java server page or jsp
     @RequestMapping(value = "/input", method = RequestMethod.GET) //state url extension localhost:8080/input
     public String inputGet(Model model) {
-        model.addAttribute("input", new InputModel());
-        return "input";
+        model.addAttribute("input", new InputModel()); //assigns the model to the jsp
+        return "inputPage"; //return the inputPage.jsp
     }
 
     //Binds a model to a platform

@@ -20,6 +20,7 @@
 </head>
 <body>
 <div class="d-flex justify-content-center">
+    <%-- input is connected to the Controller that connect the model to the view --%>
     <form:form modelAttribute="input" action="/input" method="post" cssClass="form-horizontal" class="justify-content-center">
         <fieldset>
 
